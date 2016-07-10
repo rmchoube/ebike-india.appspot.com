@@ -68,7 +68,7 @@ func ipn(w http.ResponseWriter, r *http.Request) {
 		log.Infof(c, "val: %s", v)
 	}
 	msg := &mail.Message{
-		Sender:  "Shree Automobiles <shreeautomobiles06@gmail.com>",
+		Sender:  "EBike India <ebikeindia0@gmail.com>",
 		To:      []string{"akolabranch9@gmail.com"},
 		Subject: "sale information",
 		Body:    createSaleDetailsMsg(r.Form),
@@ -155,7 +155,7 @@ func contactus(w http.ResponseWriter, r *http.Request) {
 		log.Infof(c, "val: %s", v)
 	}
 	msg := &mail.Message{
-		Sender:  "Shree Automobiles <shreeautomobiles06@gmail.com>",
+		Sender:  "EBike India <ebikeindia0@gmail.com>",
 		To:      []string{"akolabranch9@gmail.com"},
 		Subject: "Message from customer",
 		Body:    convertDetailsToStr(r.Form, contactUsDetails),
